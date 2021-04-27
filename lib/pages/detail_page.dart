@@ -39,20 +39,28 @@ class DetailPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Icon(Icons.arrow_back, color: primaryColor),
-                    Text(
-                      'Detail Tugas',
-                      style: TextStyle(
-                        color: primaryColor,
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.bold,
+                Padding(
+                  padding: EdgeInsets.only(top: 10.h),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Icon(Icons.arrow_back, color: primaryColor),
                       ),
-                    ),
-                    Icon(Icons.notifications, color: primaryColor)
-                  ],
+                      Text(
+                        'Detail Tugas',
+                        style: TextStyle(
+                          color: primaryColor,
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Icon(Icons.notifications, color: primaryColor)
+                    ],
+                  ),
                 ),
                 SizedBox(height: 20.h),
                 Text('Penerima Tugas', style: titleTextStyle),
