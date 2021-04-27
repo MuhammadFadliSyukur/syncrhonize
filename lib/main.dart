@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tugas5_monitoring/pages/home_page.dart';
+import 'package:tugas5_monitoring/pages/profile_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: Size(375, 812),
       builder: () => MaterialApp(
+        theme: ThemeData(scaffoldBackgroundColor: Colors.grey[50]),
         debugShowCheckedModeBanner: false,
         title: 'Covid 19',
         home: MyStatefulWidget(),
@@ -33,7 +35,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     Center(child: Text('info')),
-    Center(child: Text('Profile')),
+    ProfilePage(),
   ];
 
   void _onItemTapped(int index) {
