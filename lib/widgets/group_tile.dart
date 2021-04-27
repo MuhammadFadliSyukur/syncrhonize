@@ -21,7 +21,7 @@ class GroupTile extends StatelessWidget {
           SizedBox(height: 5.h),
           Text(
             title,
-            style: TextStyle(fontSize: 10.sp),
+            style: TextStyle(fontSize: 12.sp),
             textAlign: TextAlign.center,
           ),
         ],

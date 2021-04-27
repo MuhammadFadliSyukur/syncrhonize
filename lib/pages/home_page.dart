@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
                         Text(
                           'Senin, 29 April 2020',
                           style: TextStyle(
-                            fontSize: 12.sp,
+                            fontSize: 14.sp,
                             color: Color(0xff777777),
                           ),
                         )
@@ -103,22 +103,19 @@ class HomePage extends StatelessWidget {
                               Text(
                                 'Waktu Senggang Tech',
                                 style: whiteTextStyle.copyWith(
-                                    fontWeight: FontWeight.bold),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16.sp),
                               ),
-                              Text('Muhammad Fadli Syukur',
-                                  style: whiteTextStyle)
+                              Text(
+                                'Muhammad Fadli Syukur',
+                                style: whiteTextStyle.copyWith(fontSize: 16.sp),
+                              )
                             ],
                           ),
                           Spacer(),
                           Column(
                             children: [
-                              Container(
-                                padding: EdgeInsets.all(5),
-                                decoration: BoxDecoration(
-                                    shape: BoxShape.circle,
-                                    color: Colors.white),
-                                child: Icon(Icons.people, color: primaryColor),
-                              ),
+                              Icon(Icons.people, color: Colors.white),
                               Text('Total 5 tim', style: whiteTextStyle)
                             ],
                           )

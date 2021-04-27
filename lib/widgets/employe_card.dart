@@ -40,7 +40,7 @@ class EmployeCard extends StatelessWidget {
               ),
               Text(
                 taks,
-                style: TextStyle(fontSize: 12.sp),
+                style: TextStyle(fontSize: 14.sp),
               ),
               Text(
                 office,
