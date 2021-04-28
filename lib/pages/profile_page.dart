@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tugas5_monitoring/pages/edit_profile.dart';
 import 'package:tugas5_monitoring/theme.dart';
 import 'package:tugas5_monitoring/widgets/profile_tile.dart';
 
@@ -52,10 +53,20 @@ class ProfilePage extends StatelessWidget {
                       color: Colors.red,
                     ),
                     SizedBox(height: 15.h),
-                    ProfileTile(
-                      icon: Icons.person_pin,
-                      title: 'Edit Profil',
-                      color: Colors.blue[300],
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EditProfile(),
+                          ),
+                        );
+                      },
+                      child: ProfileTile(
+                        icon: Icons.person_pin,
+                        title: 'Edit Profil',
+                        color: Colors.blue[300],
+                      ),
                     ),
                     SizedBox(height: 15.h),
                     ProfileTile(
