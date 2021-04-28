@@ -26,6 +26,13 @@ class EmployeCard extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(25),
         color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            offset: Offset(5, 5),
+            blurRadius: 10,
+            color: Colors.grey[200],
+          ),
+        ],
       ),
       child: Row(
         children: [
