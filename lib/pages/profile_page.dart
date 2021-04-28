@@ -44,6 +44,13 @@ class ProfilePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(25.r),
+                  boxShadow: [
+                    BoxShadow(
+                      offset: Offset(5, 5),
+                      blurRadius: 10,
+                      color: Colors.grey[300].withOpacity(.5),
+                    ),
+                  ],
                 ),
                 child: Column(
                   children: [
@@ -84,13 +91,20 @@ class ProfilePage extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height: 20.h),
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(20.h),
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(25.r),
-                ),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(25.r),
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(5, 5),
+                        blurRadius: 10,
+                        color: Colors.grey[300].withOpacity(.5),
+                      ),
+                    ]),
                 child: Column(
                   children: [
                     ProfileTile(
@@ -104,7 +118,6 @@ class ProfilePage extends StatelessWidget {
                       title: 'Bantuan',
                       color: Colors.green[300],
                     ),
-                    SizedBox(height: 15.h),
                   ],
                 ),
               ),
