@@ -84,7 +84,7 @@ class ProfilePage extends StatelessWidget {
                     SizedBox(height: 15.h),
                     ProfileTile(
                       icon: Icons.badge,
-                      title: 'Pekerjaan',
+                      title: 'Work List',
                       color: Colors.amber[700],
                     ),
                     SizedBox(height: 15.h),
