@@ -57,8 +57,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.contact_support),
-            label: 'Info',
+            icon: Icon(Icons.badge),
+            label: 'Work List',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),

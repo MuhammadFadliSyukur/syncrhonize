@@ -161,7 +161,27 @@ class DetailPage extends StatelessWidget {
                   },
                   child: Container(
                     padding:
-                        EdgeInsets.symmetric(horizontal: 10.h, vertical: 5.h),
+                        EdgeInsets.symmetric(horizontal: 10.h, vertical: 10.h),
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: secondaryColor,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Text(
+                      'Pantau Tugas',
+                      style: subTitleTextstyle,
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.h),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 10.h, vertical: 10.h),
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: primaryColor,
@@ -169,7 +189,7 @@ class DetailPage extends StatelessWidget {
                     ),
                     child: Text(
                       'Selesai',
-                      style: whiteTextStyle.copyWith(fontSize: 16.sp),
+                      style: subTitleTextstyle.copyWith(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
                   ),
