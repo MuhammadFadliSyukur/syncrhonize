@@ -24,7 +24,7 @@ class AbsenTile extends StatelessWidget {
         Text(
           absen,
           style: TextStyle(
-            fontSize: 12,
+            fontSize: 14,
             color: Colors.grey[600],
           ),
         ),
@@ -40,8 +40,8 @@ class AbsenTile extends StatelessWidget {
           child: Text(
             time,
             style: isText
-                ? whiteTextStyle.copyWith(fontSize: 10.sp)
-                : TextStyle(color: Colors.black, fontSize: 10.sp),
+                ? whiteTextStyle.copyWith(fontSize: 12)
+                : TextStyle(color: Colors.black, fontSize: 12),
           ),
         ),
       ],

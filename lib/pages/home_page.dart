@@ -169,6 +169,7 @@ class HomePage extends StatelessWidget {
                               absenKeluar: '17.20.10',
                               judulTugas: 'Penawaran Produk Baru',
                               klien: 'PT Jaya Motor',
+                              telp: '021 456 7234',
                               deskripsi:
                                   'Menawarkan produk teknologi dan bekerja sama menciptakan teknologi fitur motor terbaru dan inovatif',
                               lokasi:
@@ -200,6 +201,7 @@ class HomePage extends StatelessWidget {
                               absenKeluar: '17.10.10',
                               judulTugas: 'Survey Tempat',
                               klien: 'Jakarta Fair Tech',
+                              telp: '0858 7654 4352',
                               deskripsi:
                                   'Survei tempat untuk demo dan seminar tentang Machine Learning di Jakarta Fair Tech',
                               lokasi:
@@ -231,6 +233,7 @@ class HomePage extends StatelessWidget {
                               absenKeluar: '17.10.10',
                               judulTugas: 'Follow Up Meeting',
                               klien: 'West Project',
+                              telp: '021 3455 6743',
                               deskripsi:
                                   'Follow Up Meeting untuk membahasa kalanjutan proyek dari West One City Tech',
                               lokasi:

@@ -14,6 +14,7 @@ class DetailPage extends StatelessWidget {
   final String lokasi;
   final String imgLokasi;
   final String deskripsi;
+  final String telp;
 
   DetailPage({
     this.absenKeluar,
@@ -26,6 +27,7 @@ class DetailPage extends StatelessWidget {
     this.lokasi,
     this.name,
     this.deskripsi,
+    this.telp,
   });
 
   @override
@@ -124,54 +126,31 @@ class DetailPage extends StatelessWidget {
                       SizedBox(height: 20.h),
                       Text(
                         'Judul Tugas',
-                        style: TextStyle(fontSize: 12.sp, color: Colors.grey),
+                        style: TextStyle(color: Colors.grey),
                       ),
                       SizedBox(height: 5.h),
                       Text(judulTugas),
                       SizedBox(height: 20.h),
                       Text(
-                        'Klien',
-                        style: TextStyle(fontSize: 12.sp, color: Colors.grey),
-                      ),
-                      SizedBox(height: 5.h),
-                      Text(klien),
-                      SizedBox(height: 20.h),
-                      Text(
                         'Deskripsi',
-                        style: TextStyle(fontSize: 12.sp, color: Colors.grey),
+                        style: TextStyle(color: Colors.grey),
                       ),
                       SizedBox(height: 5.h),
                       Text(deskripsi),
                       SizedBox(height: 20.h),
                       Text(
-                        'Lokasi',
-                        style: TextStyle(fontSize: 12.sp, color: Colors.grey),
+                        'Klien',
+                        style: TextStyle(color: Colors.grey),
                       ),
                       SizedBox(height: 5.h),
-                      Text(lokasi),
+                      Text(klien, style: subTitleTextstyle),
                       SizedBox(height: 5.h),
+                      Text(telp),
+                      SizedBox(height: 5.h),
+                      Text(lokasi, style: TextStyle(color: Colors.grey[600])),
+                      SizedBox(height: 10.h),
                       Image.asset(imgLokasi)
                     ],
-                  ),
-                ),
-                SizedBox(height: 20.h),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                  child: Container(
-                    padding:
-                        EdgeInsets.symmetric(horizontal: 10.h, vertical: 10.h),
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: secondaryColor,
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: Text(
-                      'Pantau Tugas',
-                      style: subTitleTextstyle,
-                      textAlign: TextAlign.center,
-                    ),
                   ),
                 ),
                 SizedBox(height: 20.h),

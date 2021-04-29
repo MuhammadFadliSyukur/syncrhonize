@@ -11,4 +11,4 @@ TextStyle titleTextStyle = TextStyle(
 
 TextStyle subTitleTextstyle = TextStyle(fontSize: 18.sp);
 
-TextStyle whiteTextStyle = TextStyle(fontSize: 14.sp, color: Colors.white);
+TextStyle whiteTextStyle = TextStyle(fontSize: 14, color: Colors.white);
