@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tugas5_monitoring/pages/home_page.dart';
 import 'package:tugas5_monitoring/pages/profile_page.dart';
+import 'package:tugas5_monitoring/pages/work_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,7 +35,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    Center(child: Text('info')),
+    WorkList(),
     ProfilePage(),
   ];
 
